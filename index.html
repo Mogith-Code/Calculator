@@ -19,34 +19,63 @@
         </div>
 
         <div class="calculator_screen-conainer">
-            <input type="text" class="calculator_screen" placeholder="0" disabled>
+            <div class="calculator_screen">
+                <div class="screen_top_row">
+                    <span class="screen_angle-mode">DEG</span>
+                    <span class="screen_formula"></span>
+                </div>
+                <div class="screen_main">0</div>
+            </div>
         </div>
 
         <div class="calculator_keybord">
+            <!-- Row 1 -->
+            <button class="button mode-toggle angle-toggle">DEG</button>
+            <button class="button scientific paren">(</button>
+            <button class="button scientific paren">)</button>
+            <button class="button scientific factorial">!</button>
             <button class="button clear allclear">AC</button>
+
+            <!-- Row 2 -->
+            <button class="button scientific func">sin</button>
+            <button class="button scientific func">cos</button>
+            <button class="button scientific func">tan</button>
             <button class="button clear delete">Del</button>
             <button class="button percent">%</button>
+
+            <!-- Row 3 -->
+            <button class="button scientific func">log</button>
+            <button class="button scientific func">ln</button>
+            <button class="button scientific power">^</button>
+            <button class="button scientific func">√</button>
             <button class="button operatorBtn">&divide;</button>
 
+            <!-- Row 4 -->
+            <button class="button scientific constant">π</button>
             <button class="button num">7</button>
             <button class="button num">8</button>
             <button class="button num">9</button>
             <button class="button operatorBtn">&times;</button>
 
+            <!-- Row 5 -->
+            <button class="button scientific constant">e</button>
             <button class="button num">4</button>
             <button class="button num">5</button>
             <button class="button num">6</button>
             <button class="button operatorBtn minus">-</button>
 
+            <!-- Row 6 -->
+            <button class="button scientific ans-btn">ANS</button>
             <button class="button num">1</button>
             <button class="button num">2</button>
             <button class="button num">3</button>
             <button class="button operatorBtn">+</button>
 
+            <!-- Row 7 -->
             <button class="button num">0</button>
             <button class="button num">00</button>
             <button class="button num dot">.</button>
-            <button class="button equalbtn">=</button>
+            <button class="button equalbtn" style="grid-column: span 2;">=</button>
         </div>
     </div>
     <footer class="footer">
